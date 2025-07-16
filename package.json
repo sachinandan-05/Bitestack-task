@@ -4,12 +4,12 @@
   "description": "Identity reconciliation service for Bitespeed",
   "main": "src/index.ts",
   "type": "module",
-  "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc",
-    "start": "nodemon --watch src --ext ts --exec \"ts-node --loader ts-node/esm src/index.ts",
-    "test": "jest"
-  },
+ "scripts": {
+  "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+  "build": "tsc",
+  "start": "nodemon --watch src --ext ts --exec \"ts-node --loader ts-node/esm\" src/index.ts",
+  "test": "jest"
+},
   "dependencies": {
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
