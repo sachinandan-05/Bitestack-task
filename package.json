@@ -7,8 +7,7 @@
  "scripts": {
   "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
   "build": "tsc",
-  "start": "nodemon --loader ts-node/esm src/index.ts",
-
+  "start": "nodemon --watch src --ext ts --exec node --loader ts-node/esm src/index.ts",
 
   "test": "jest"
 },
